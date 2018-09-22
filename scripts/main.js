@@ -30,8 +30,9 @@ let drawBorders = function() {
 
   //Borders for canvas
   const mainBorder = context.strokeRect(1, 1, 398, 298); 
-  const topBorder = context.strokeRect  (1, 1, 398, 120);
-  // const middleBorder = context.strokeRect(1, 1, 398, 298);
+  const topBorder = context.strokeRect(1, 1, 398, 120);
+  const bottomBorder = context.strokeRect(1, 1, 398, 147.5);
+  const middleBorder = context.strokeRect(200, 149, 1, 150);
 
 }
 
