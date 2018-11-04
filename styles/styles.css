@@ -143,12 +143,22 @@
   box-shadow: 0.1em 0.1em 0 0  rgb(172, 5, 5), inset 0.1em 0.1em 0 0 rgb(45, 129, 37);  
 }
 
-#menuSystemOne, #menuSystemTwo, #menuSystemThree, #menuSystemFour {
-  width: 784px;
-  height: 346px;
+#menuSystemOne, #menuSystemTwo {
+  width: 387px;
+  height: 291px;
   position: absolute;
-  top: 251px;
-  left: 10px;
+  top: 306px;
+  left: 11px;
+  display: none;
+}
+
+#menuSystemThree, #menuSystemFour {
+  width: 386px;
+  height: 291px;
+  position: absolute;
+  top: 306px;
+  left: 409px;
+  display: none;
 }
 
 #menuSystemOne {
@@ -188,4 +198,12 @@
   border-right: 5px solid purple;
   display: none;
   /* background-image: url('../images/seamless-abstract-nebula.jpg'); */
+}
+
+
+#mainBackgroundArea {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  z-index: -1;
 }

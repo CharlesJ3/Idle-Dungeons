@@ -44,4 +44,85 @@ drawBorders();
 * -------------------------------
 */
 
+const player = {
+  title : 'the Titleless (is this possible? isn\'t \"Titleless\" a title?',
+  level : 0,
+  rank : '',
+  prestigeFieldOneUnlock : 0,
+  prestigeFieldTwoUnlock : 0,
+  prestigeFieldThreeUnlock : 0,
+  prestigeFieldFourUnlock : 0,
+  prestigeFieldFiveUnlock : 0,
+  prestigeFieldSixUnlock : 0,
+  prestigeFieldOneUnlock : 0,
+  prestigeFieldOneUnlock : 0,
+  prestigeFieldOneUnlock : 0,
+  prestigeFieldOneUnlock : 0,
+}
 
+class Pet {
+  constructor(name, title, level, type, typeTwo, baseAttack, speed, cost, rank, equipOne, equipTwo, animateOne, animateTwo, animateThree, description) {
+    this.name = name,
+    this.title = title,
+    this.level = level,
+    this.type = type,
+    this.typeTwo = typeTwo,
+    this.baseAttack = baseAttack,
+    this.speed = speed,
+    this.cost = cost,
+    this.rank = rank,
+    this.equipOne = equipOne,
+    this.equipTwo = equipTwo,
+    this.animateOne = animateOne,
+    this.animateTwo = animateTwo,
+    this.animateThree = animateThree,
+    this.description = description;
+  }
+}
+
+class Enemy {
+  constructor(name, title, level, type, typeTwo, baseAttack, speed, rank, equipOne, equipTwo, animateOne, animateTwo, animateThree, description) {
+    this.name = name,
+    this.title = title,
+    this.level = level,
+    this.type = type,
+    this.typeTwo = typeTwo,
+    this.baseAttack = baseAttack,
+    this.speed = speed,
+    this.rank = rank,
+    this.equipOne = equipOne,
+    this.equipTwo = equipTwo,
+    this.animateOne = animateOne,
+    this.animateTwo = animateTwo,
+    this.animateThree = animateThree,
+    this.description = description;
+  }
+}
+
+
+/*
+* -------------------------------
+* Menu System
+* -------------------------------
+*/
+
+// REFACTOR : 
+const switchMenuOne = () => {
+  $( "#menuSystemOne" ).css('display', 'inherit');
+  $( "#menuSystemTwo" ).css('display', 'none');
+}
+
+const switchMenuTwo = () => {
+  $( "#menuSystemOne" ).css('display', 'none');
+  $( "#menuSystemTwo" ).css('display', 'inherit');
+}
+
+const switchMenuThree = () => {
+  $( "#menuSystemThree" ).css('display', 'inherit');
+  $( "#menuSystemFour" ).css('display', 'none');
+}
+
+const switchMenuFour = () => {
+  $( "#menuSystemThree" ).css('display', 'none');
+  $( "#menuSystemFour" ).css('display', 'inherit');
+}
